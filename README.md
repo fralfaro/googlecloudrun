@@ -1,3 +1,20 @@
-# googlecloudrun
-Provides a PDF that has step by step instructions on how to deploy a streamlit app on to google cloud run.  You need the Dockerfile (provided) and requirements.txt (provided) and your python code in your repo that you want to deploy.
-In the requirements.txt file provide all the packages google will need to install in order for you app to run (e.g., streamlit).  Also the two google libraries i have included must be present for you to deploy on google cloud run.
+Please read for what's required in terms of roles and API!
+
+You will need the following roles:
+
+  -Cloud Build Service Account (roles/cloudbuild.builds.builder)
+  
+  -Cloud Run Admin (roles/run.admin)
+  
+  -Service Account User (roles/iam.serviceAccountUser)
+  
+Enable Billing for your project
+
+Enable Cloud Build API & Cloud Run Admin API
+
+Enable Identity and Access Management (IAM) API
+
+BELOW SHOWS YOU HOW TO PROVIDE YOUR .ENV VARIABLE>>>e.g, API_KEY ETC
+
+![image](https://github.com/user-attachments/assets/8c07363b-44fc-4a47-8256-b7ac68551d98)
+
